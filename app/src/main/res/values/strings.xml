@@ -1,0 +1,39 @@
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">WhatsApp Translate</string>
+    <string name="select_language">Select Language</string>
+    <string name="save_language">Save Language</string>
+
+    <!-- Texto adicional para la búsqueda de idiomas -->
+    <string name="search_language">Search Language</string> <!-- Cadena añadida -->
+
+    <!-- Textos adicionales -->
+    <string name="permission_info">This application requires the following permissions to function properly:</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <!-- Textos para la pantalla de activación -->
+    <string name="activation_header">Activate WhatsApp Translate+</string>
+    <string name="activation_info">Press the button below to activate the app and start using real-time translation.</string>
+    <string name="activate_button">Activate Now</string>
+
+    <!-- Textos para la pantalla de configuración de permisos -->
+    <string name="permission_header">Configuración de Permisos</string>
+    <string name="permission_warning">Para que la aplicación funcione correctamente, necesitamos acceder a ciertos permisos.</string>
+    <string name="microphone_permission">Acceso al Micrófono</string>
+    <string name="storage_permission">Acceso al Almacenamiento</string>
+    <string name="notifications_permission">Notificaciones</string>
+    <string name="accept_permissions">Conceder Permisos</string>
+
+    <!-- Textos para la pantalla de activación -->
+    <string name="activation_confirmation">La configuración ha sido exitosa. Presiona el botón a continuación para abrir WhatsApp con la traducción habilitada.</string>
+    <string name="open_whatsapp_button">Abrir WhatsApp</string>
+    <string name="activation_instructions">Se abrirá WhatsApp con la traducción habilitada.</string>
+
+    <!-- Otras cadenas -->
+    <string name="accessibility_service_description">Este servicio permite la traducción automática de mensajes en WhatsApp.</string>
+    <string name="translate_button_description">Botón de traducción</string>
+    <string name="channel_name">Canal de notificaciones</string>
+    <string name="channel_description">Canal para las notificaciones de WhatsApp Translate</string>
+    <string name="translate_icon">Ícono de traducción</string>
+</resources>

@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Tema de la Aplicación -->
+    <style name="Theme.WhatsAppTranslate" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Color de la barra de acción -->
+        <item name="colorPrimary">@color/button_color</item> <!-- O usa un color específico -->
+        <item name="colorPrimaryVariant">@color/background_light</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/button_color</item>
+        <!-- Fondo de la aplicación -->
+        <item name="android:windowBackground">@color/background_light</item>
+    </style>
+
+    <!-- Estilo para los Botones -->
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:backgroundTint">@color/button_color</item>
+    </style>
+
+    <!-- Estilo para TextViews -->
+    <style name="TextViewStyle" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Estilo para Mensajes de Advertencia -->
+    <style name="WarningTextStyle" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/warning_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Estilo para Instrucciones -->
+    <style name="InstructionTextStyle" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="android:textColor">@color/instruction_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Estilo para Spinner -->
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Estilo para el tema de la aplicación -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Personaliza los colores de tu tema aquí -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#424949"
+    android:padding="16dp">
+
+
+
+    <!-- Título Superior -->
+    <TextView
+        android:id="@+id/tv_select_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Traducción"
+        android:textSize="24sp"
+        android:textColor="#FFC107"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"/>
+
+    <!-- Etiqueta para el Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opción de traducción"
+        android:textColor="#FFC107"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/tv_select_language"/>
+
+    <!-- Lista Desplegable de Opciones de Traducción -->
+    <Spinner
+        android:id="@+id/spinner_languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:popupBackground="#0f4945"
+        android:layout_below="@id/tv_select_language"
+        android:layout_centerHorizontal="true"
+        android:animateLayoutChanges="true"/>
+
+    <!-- Botón Guardar Opción de Traducción -->
+    <Button
+        android:id="@+id/btn_save_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar opción"
+        android:layout_gravity="center"
+        android:padding="12dp"
+        android:backgroundTint="#0099ff"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/spinner_languages"
+        android:layout_centerHorizontal="true"
+        android:elevation="4dp"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"/>
+
+</RelativeLayout>

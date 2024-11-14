@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Dimensiones comunes -->
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+
+    <!-- Tamaños de texto -->
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">16sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+
+    <!-- Altura de botones -->
+    <dimen name="button_height">48dp</dimen>
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="languages_array">
+        <item>English</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Chinese</item>
+        <item>Japanese</item>
+        <!-- Agrega más idiomas según sea necesario -->
+    </string-array>
+</resources>

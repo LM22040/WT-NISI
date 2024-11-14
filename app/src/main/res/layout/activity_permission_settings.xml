@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#424949">
+
+    <!-- Encabezado de la pantalla -->
+    <TextView
+    android:id="@+id/tv_permission_header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/permission_header"
+    android:textSize="24sp"
+    android:textColor="#FFC107"
+    android:textStyle="bold"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="32dp"
+    android:shadowColor="#000000"        
+    android:shadowDx="2"                
+    android:shadowDy="2"                
+    android:shadowRadius="2"/>   
+
+    <!-- Mensaje de advertencia -->
+    <TextView
+    android:id="@+id/tv_permission_info"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="This is a text view"
+    android:textSize="16sp"
+    android:textColor="#FFC107"
+    android:layout_below="@id/tv_permission_header"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:textAlignment="center"
+    android:shadowColor="#000000"
+    android:shadowDx="2"
+    android:shadowDy="2"
+    android:shadowRadius="2"/>
+
+
+    <!-- Lista de permisos -->
+    <LinearLayout
+        android:id="@+id/ll_permission_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_permission_info"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <!-- Permiso: Acceso al Micrófono -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/iv_microphone_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_microphone"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tv_microphone_permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Micrófono"
+                android:textSize="18sp"
+                android:textColor="#FFC107"
+                android:layout_toEndOf="@id/iv_microphone_icon"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <Switch
+                android:id="@+id/switch_microphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <!-- Permiso: Acceso al Almacenamiento -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/iv_storage_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_storage"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tv_storage_permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Almacenamiento"
+                android:textSize="18sp"
+                android:textColor="#FFC107" 
+                android:layout_toEndOf="@id/iv_storage_icon"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <Switch
+                android:id="@+id/switch_storage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <!-- Permiso: Notificaciones -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_notifications_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_notifications"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tv_notifications_permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notificaciones"
+                android:textSize="18sp"
+                android:textColor="#FFC107"
+                android:layout_toEndOf="@id/iv_notifications_icon"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <Switch
+                android:id="@+id/switch_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <!-- Permiso: Superposición -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/iv_overlay_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_chat_bubble"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tv_overlay_permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permiso de ventanas flotantes"
+                android:textSize="18sp"
+                android:textColor="#FFC107"
+                android:layout_toEndOf="@id/iv_overlay_icon"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <Switch
+                android:id="@+id/switch_overlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <!-- Permiso: Accesibilidad -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/iv_accessibility_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_accessibility"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/tv_accessibility_permission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servicio de accesibilidad"
+                android:textSize="18sp"
+                android:textColor="#FFC107" 
+                android:layout_toEndOf="@id/iv_accessibility_icon"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"/>
+
+            <Switch
+                android:id="@+id/switch_accessibility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!-- Botón de aceptar -->
+    <Button
+        android:id="@+id/btn_accept_permissions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/accept_permissions"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0099ff"
+        android:layout_below="@id/ll_permission_list"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:padding="12dp"/>
+
+    <!-- Botón de política de privacidad -->
+    <Button
+        android:id="@+id/btn_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privacy Policy"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0099ff"
+        android:layout_below="@id/btn_accept_permissions"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"/>
+
+</RelativeLayout>
